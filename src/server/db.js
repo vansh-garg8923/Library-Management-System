@@ -92,6 +92,30 @@ app.get("/login/student", async (req, res) => {
   }
 });
 
+// login route for staff
+app.get("/login/staff", async (req, res) => {
+  try {
+    const { username, password } = req.query;
+
+    // checking that username is an integer only
+    if (!/^\d+$/.test(username)) {
+      return res.status(400).json({ error: "Username must be a number" });
+    }
+
+    const [rows] = await pool.query("CALL staffLogin(?, ?)", [username, password]);
+
+    const result = rows[0][0];
+    if (result.success === 1) {
+      return res.json({ message: "Login successful" });
+    } else {
+      return res.status(401).json({ message: "Invalid credentials" });
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Database error" });
+  }
+});
+
 // issue book to student by staff
 app.get("/issue", async (req, res) => {
   try {
