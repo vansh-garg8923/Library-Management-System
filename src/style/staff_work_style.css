@@ -7,7 +7,7 @@
 
 .main-heading{
     display: flex;
-    
+
     width:100%;
     height:10vw;
     background-color: #A3CCDA;
@@ -37,7 +37,7 @@ h2{
 }
 label{
     font-size: 1.5rem;
-    
+
 }
 .student_info,.book_info{
     display: flex;
@@ -55,7 +55,7 @@ label{
 .book_info{
     display: flex;
     flex-wrap: nowrap;
-    
+
 }
 #one{
     margin-right: 35%;

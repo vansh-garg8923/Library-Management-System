@@ -1,7 +1,7 @@
 *{
     box-sizing:border-box;
     margin: 0;
-    
+
     background-color: #F9F5F0;
 }
 
@@ -9,7 +9,7 @@
 
 .main-heading{
     display: flex;
-    
+
     width:100%;
     height:15vw;
     background-color: #A3CCDA;
@@ -27,7 +27,7 @@
 .login{
     width: 100%;
     height:80vh;
-    
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -67,7 +67,7 @@ button{
     border: 2px solid black;
     border-radius: 4px;
     background-color: gainsboro;
-    
+
 }
 button:hover{
     background-color: gray;
