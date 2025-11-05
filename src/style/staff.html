@@ -3,47 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashbooard - Student</title>
-    <link rel="stylesheet" href="student.css">
+    <title>Dashboard - Staff</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/staff.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="main-heading">
+    <header class="main-heading" role="banner">
         <div class="jiit_img">
-            <img id="jiit" src="/public/jiit_img.png">
+            <img id="jiit" src="https://www.jiit.ac.in/sites/default/files/logo_0.png" alt="JIIT logo">
         </div>
-        <div id="heading1">Learning Resource Center</div>
-    </div>
+        <h1 id="heading1">Learning Resource Center</h1>
+    </header>
 
     <div class="logout">
-        <button id="myprofile" name="myprofile">My Profile</button>
+        <div class="profile">
+            <button id="myprofile" name="myprofile">My Profile</button>
+            <!-- profile data comes here  -->
+        </div>
         <button name="logout" id="logout">Log out</button>
     </div>
 
-    <div class="search_bar">
-        <pre>Search:</pre>
-        <div class="options">
-
-            <select name="search_by" id="search_by">
-                <option value="" disabled selected hidden>All</option>
-                <option value="Author">Author</option>
-                <option value="Title">Title</option>
-                <option value="ISBN">ISBN</option>
-                <option value="Category">Category</option>
-            </select>
-            <input type="text" name="text" id="search" placeholder="Type here">
-            <submit class="icon">
-                <i id="searchbtn" class="fa-solid fa-magnifying-glass"></i>
-            </submit>
-        </div>
-
+    <div class="do_sumthing">
+        <button id="issue">Issue Books</button>
+        <button id="man_st">Manage Students</button>
+        <button id="man_bk">Manage Books</button>
     </div>
 
-    <div class="bookinfo">
-    <table id="booktable" border="n">
-      <!-- data comes here -->
-    </table>
-    </div>
 
 </body>
 <script src="staff.js"></script>

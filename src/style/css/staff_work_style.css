@@ -1,0 +1,134 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+}
+
+/* Neobrutalism Pastel Theme Tokens */
+:root{
+    --bg: #F7F5FF;
+    --card: #FFF7F0;
+    --accent: #A3CCDA;
+    --accent-2: #FAD9E6;
+    --accent-3: #D8F3DC;
+    --text: #1f2430;
+    --outline: #0E0E10;
+    --shadow: 6px 6px 0 var(--outline);
+}
+
+html, body{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";
+}
+
+
+.main-heading{
+    display: flex;
+    width:100%;
+    height:auto;
+    min-height: 84px;
+    background-color: var(--accent);
+    border: 3px solid var(--outline);
+    box-shadow: var(--shadow);
+    align-items: center;
+    padding: 1rem 1.25rem;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#heading1{
+    align-self: center;
+    margin-left: 1rem;
+    background-color: transparent;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 800;
+}
+
+#jiit{
+    height:64px;
+}
+
+.entry{
+    margin-top:1.5%;
+    margin-left:3%;
+}
+h1{
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 1.5%;
+}
+h2{
+    margin-bottom:1%;
+    font-size: 2.5rem;
+}
+label{
+    font-size: 1.5rem;
+
+}
+.student_info,.book_info{
+    display: flex;
+    align-items: center;
+}
+#enr, #title, #isbn{
+    height: 2.4vw;
+    margin-left: 2vw;
+    width:15vw;
+    font-size: 1rem;
+}
+#enr:focus, #title:focus, #isbn:focus{
+    background-color: #fff;
+}
+.book_info{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#one{
+    margin-right: 35%;
+}
+input{
+    border:3px solid var(--outline);
+    border-radius: 12px;
+    background: #fff;
+    padding: .25rem .5rem;
+}
+.submit{
+    display: flex;
+    margin-top:7vw;
+    text-align: center;
+    justify-content: center;
+}
+#submit_button{
+    height: 2.5vw;
+    width:10vw;
+    border-radius: 12px;
+    border: 3px solid var(--outline);
+    background-color: var(--accent-2);
+    font-size: large;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+#submit_button:hover{
+    transform: translate(-2px, -2px);
+    box-shadow: 10px 10px 0 var(--outline);
+}
+#submit_button:active{
+    transform: translate(0,0);
+}
+
+.border{
+    margin-top: 1%;
+    border: 3px solid var(--outline);
+    padding-bottom:5%;
+    background: var(--card);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Accessibility focus states */
+input:focus-visible, button:focus-visible, select:focus-visible{
+    outline: 3px dashed var(--outline);
+    outline-offset: 3px;
+}

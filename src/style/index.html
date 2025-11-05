@@ -4,30 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LRC</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="color-scheme" content="light">
 </head>
 <body>
-    <div class="main-heading">
+    <header class="main-heading" role="banner">
         <div class="jiit_img">
-            <img id="jiit" src="/public/jiit_img.png">
+            <img id="jiit" src="https://www.jiit.ac.in/sites/default/files/logo_0.png" alt="JIIT logo">
         </div>
-        <div id="heading1">Learning Resource Center</div>
-    </div>
-    <div class="boxes">
-        <a href="staff-signin.html">
-            <div class="box1">
-            <div class="h">
-                Staff Sign In
-            </div>
-            </div>
-        </a>
-        <a href="student-signin.html">
-            <div class="box1">
-                Student Sign In
-                </div>
-            </div>
-        </a>
-    <br><br>
-    <hr>
+        <h1 id="heading1">Learning Resource Center</h1>
+    </header>
+    <main>
+        <section class="boxes" aria-label="Sign in options">
+            <a href="staff-signin.html" aria-label="Staff sign in">
+                <div class="box1">Staff Sign In</div>
+            </a>
+            <a href="student-signin.html" aria-label="Student sign in">
+                <div class="box1">Student Sign In</div>
+            </a>
+        </section>
+    </main>
 </body>
 </html>

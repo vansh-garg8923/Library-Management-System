@@ -1,0 +1,128 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+}
+
+/* Neobrutalism Pastel Theme Tokens */
+:root{
+    --bg: #F7F5FF;
+    --card: #FFF7F0;
+    --accent: #A3CCDA;
+    --accent-2: #FAD9E6;
+    --accent-3: #D8F3DC;
+    --text: #1f2430;
+    --outline: #0E0E10;
+    --shadow: 6px 6px 0 var(--outline);
+}
+
+html, body{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";
+}
+
+
+
+.main-heading{
+    display: flex;
+    width:100%;
+    height:auto;
+    min-height: 84px;
+    background-color: var(--accent);
+    border: 3px solid var(--outline);
+    box-shadow: var(--shadow);
+    align-items: center;
+    padding: 1rem 1.25rem;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#heading1{
+    align-self: center;
+    margin-left: 1rem;
+    background-color: transparent;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 800;
+}
+
+#jiit{
+    height:64px;
+}
+
+.login{
+    width: 100%;
+    height:80vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+fieldset{
+    height: 70%;
+    width:40vw;
+    font-size: 140%;
+    background-color: var(--card); /* neo card */
+    border: 3px solid var(--outline); /* neo outline */
+    border-radius: 18px;
+    box-shadow: var(--shadow); /* neo shadow */
+}
+legend{
+    font-size: 2em;
+}
+#name,#passwd{
+    display: block;
+    width:80%;
+    height:15%;
+    margin-top: 2%;
+}
+#name:hover,#passwd:hover,#name:active,#passwd:active{
+    background-color: #fff;
+}
+#sbutton{
+    width:100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    background-color:transparent;
+}
+button{
+    font-weight: 700;
+    font-size: .95rem;
+    padding: .6rem 1rem;
+    border: 3px solid var(--outline);
+    border-radius: 12px;
+    background-color: var(--accent-3);
+    color: var(--text);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    width: 30%;
+}
+
+button:hover{
+    transform: translate(-2px, -2px);
+    box-shadow: 10px 10px 0 var(--outline);
+    transition-duration: 0.15s;
+}
+button:active{
+    transform: translate(0,0);
+    transition-duration: 0.15s;
+}
+label{
+    background-color:transparent;
+}
+
+/* Accessibility focus states */
+input:focus-visible, button:focus-visible, select:focus-visible{
+    outline: 3px dashed var(--outline);
+    outline-offset: 3px;
+}
+
+/* Responsive form width for tablets */
+@media (max-width: 900px){
+    fieldset{ width: 90vw; }
+    #jiit{ height:56px; width:auto; }
+}
+

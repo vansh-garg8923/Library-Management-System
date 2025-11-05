@@ -26,7 +26,7 @@ loginbutton.addEventListener('click', async (event) => {
   if (data.message === "Login successful") {
     document.querySelector('#name').value = "";
     document.querySelector('#passwd').value = "";
-    window.location.href = "/staff_work.html";
+    window.location.href = "/staff.html";
     localStorage.setItem("curr_user", usrname);
   } else {
       if (!res.ok) {
