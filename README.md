@@ -6,6 +6,9 @@ Library Resource Center is a small scale custom web-based library management sys
 
 ## Previews
 
+<img width="822" height="649" alt="Image" src="https://github.com/user-attachments/assets/31c05397-e6cf-41fc-ba33-900de638bbae" />
+
+<img width="1783" height="693" alt="Image" src="https://github.com/user-attachments/assets/6250e17c-3d98-475c-9729-d5d3eabe1501" />
 
 
 ## Api's
